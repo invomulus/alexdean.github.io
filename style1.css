@@ -1,0 +1,109 @@
+/* sets the margin to 0 so pictures can strech the whole 1920 by 1080*/
+body 
+{
+margin:0;
+
+}
+
+ul {
+	width:1920px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color: #4CAF50;
+}
+.main{
+float:right;
+width:50%;
+}
+/* styles the paragraphs red and sets font size to 18  */
+p{
+color:red;
+font-size:18px
+}
+/* this is a slideshow div it is set to float left so i can have items on the right , it also has a set size so the two items can align well*/
+#slidshow{
+float:left;
+width:50%;
+width: 960;
+height: 480px;
+}
+#slideshow > div { 
+float:left;
+width:50%;
+position:absolute;
+height:480;
+}
+footer{
+	width:1920px;
+	background-color:#333;
+	height:42px;}
+.map{
+width:400px;height:400px
+}
+.map{
+width:400px;height:400px
+}
+h1{
+background-color:white;
+color:black
+}
+/*floats left so content can be on the right*/
+.orgins
+{
+display: block;
+float:left;
+width:50%;
+}
+.main2{
+float:right;
+display: block;
+clear:right
+}	
+.main3{
+float:left;
+position:below;	
+clear:both;
+color:blue;
+font-size:18px	
+}
+/* i used a clear tag so it would go below the picture and slideshow*/
+.video{
+clear:both;
+}
+h2{
+font:18px;
+color:black;
+}	
+.main4
+{
+clear:both;
+color:red;
+font-size:18px	
+}
+
+	

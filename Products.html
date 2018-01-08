@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Products</title>
+   <link rel="stylesheet" type="text/css" href="style1.css">
+  <meta charset="utf-8" />
+<!-- this scripts calculates the cost the function gets the total and add quantity to it .it does this by having a set value which then gets added to the current qauntity--> 
+  <script>
+function Total(qty,ud,total,value){
+ qty=document.getElementById(qty);
+ ud>0?qty.value++:qty.value--;
+ qty.value=Math.max(qty.value,0);
+ document.getElementById(total).value=qty.value*value;
+}
+  </script>
+</head>
+
+<body>
+<!-- navbar this allows you to go from page to page as you click  on it ,
+list is used to create a navbar with links to pages-->
+<ul>
+  <img src="products.jpg"width="1920"  height="172">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About </a></li>
+  <li><a href="location.html">Locations</a></li>
+  <li><a class="active"  href="#fafaf">Products</a><li>
+   <li><a href="demo.html">Demo</a></li>
+</ul>
+<img src="calculate.png">
+<p>Here at the lego store we have a lot of high quality products for sale, this page just shows of a view examples of the products you can buy, using the buttons you can calculate the cost depending on the quantity you want</P>
+    <div class="slider-vertical"></div>
+<div id="purhcaseForm">
+	 <form id="purchase">
+	     <br><h2>Star wars set</h2>
+	     <br><img src="starwars.jpg">
+		 <br> Item Price: £30.00
+		 <br> Please Select Quantity
+		  <!--- sets the price for the product , also has a button a +/- to add more of the product or take a way if you add it to many times-->
+		 <input type='button' name='subtract' onclick='Total("qty",-1,"total",30.00);' value='-'/>
+		 <input type='button' name='add' onclick='Total("qty",1,"total",30.00);' value='+'/>
+		 <input type='text' name='qty' id='qty' readonly=true value="0"/>
+		 <input type='text' name='total' id='total' value="0" />
+      </form>
+</div>
+    <div class="slider-vertical"></div>
+<div id="purhcaseForm1">
+	 <form id="purchase1">
+	     <br><h2>Spongebob Lego set</h2>
+	     <br><img src="spongebob.jpg">
+		 <br> Item Price: £25.00
+		 <br> Please Select Quantity
+		 <input type='button' name='subtract' onclick='Total("qty1",-1,"total1",25.00);' value='-'/>
+		 <input type='button' name='add' onclick='Total("qty1",1,"total1",25.00);' value='+'/>
+		 <input type='text' name='qty1' id='qty1' readonly=true value="0"/>
+		 <input type='text' name='total1' id='total1' value="0" />
+      </form>
+         </body>
+		 
+</html>
